@@ -1,31 +1,18 @@
+"use client";
+
 import Button from "@/components/Button";
-import DesignExample1Image from "@/assets/images/design-example-1.png";
-import DesignExample2Image from "@/assets/images/design-example-2.png";
-import Image from "next/image";
-import Pointer from "@/components/Pointer";
+import CursorImg from "@/assets/images/cursor-you.svg";
+import HeroElements from "@/components/HeroElements";
 
 export default function Hero() {
     return (
-        <section className="py-24 overflow-x-clip">
+        <section
+            className="py-24 overflow-x-clip"
+            style={{ cursor: `url(${CursorImg.src}), auto` }}
+        >
             <div className="container relative">
-                <div className="hidden lg:block absolute pointer-events-none -left-40 top-16">
-                    <Image
-                        src={DesignExample1Image}
-                        alt="Design Example 1 Image"
-                    />
-                </div>
-                <div className="hidden lg:block absolute pointer-events-none -right-72 -top-16">
-                    <Image
-                        src={DesignExample2Image}
-                        alt="Design Example 2 Image"
-                    />
-                </div>
-                <div className="hidden lg:block absolute left-56 top-96">
-                    <Pointer name="Andrea" />
-                </div>
-                <div className="hidden lg:block absolute right-80 -top-4">
-                    <Pointer name="Bryan" color="red" />
-                </div>
+                <HeroElements />
+
                 <div className="flex justify-center">
                     <div className="inline-flex py-1 px-3 bg-gradient-to-t from-purple-400 to-purple-400 rounded-full text-neutral-800 font-semibold">
                         ✨ $7.5M seed round raised

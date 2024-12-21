@@ -25,10 +25,10 @@ export default function Navbar() {
                         <div className="grid grid-cols-2 lg:grid-cols-3 p-2 px-4 md:pr-2 items-center">
                             <div>
                                 <Image
-                                    className="h-9 md:h-auto w-auto"
+                                    className="h-9 md:h-[50px] w-auto"
                                     src={LogoImage}
-                                    height={500}
-                                    width={500}
+                                    height={50}
+                                    width={50}
                                     alt="LogoImage"
                                 />
                             </div>
