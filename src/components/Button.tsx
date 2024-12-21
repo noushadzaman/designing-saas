@@ -23,8 +23,9 @@ export default function Button(
     return (
         <button
             className={classes({
-                variant: props.variant,
-                className: props.className,
+                variant: variant,
+                className: className,
+                size: size,
             })}
             {...otherProps}
         />
