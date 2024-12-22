@@ -32,7 +32,7 @@ export default function Introduction() {
                         <Tag>Introduction Layers</Tag>
                     </div>
                     <div className="text-4xl md:text-6xl lg:text-7xl text-center font-medium mt-10">
-                        <span>Your creative process deserves better.</span>
+                        <span>Your creative process deserves better. </span>
                         <>
                             {words.map((word, i) => (
                                 <span
